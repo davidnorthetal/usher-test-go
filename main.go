@@ -6,11 +6,9 @@ import (
 )
 
 func main() {
-	var name string
+	name := "Unknown"
 	if len(os.Args) > 1 {
 		name = os.Args[1]
-	} else {
-		name = "Unknown"
 	}
 
 	fmt.Println(fmt.Sprintf("Oh, hi %s!", name))
